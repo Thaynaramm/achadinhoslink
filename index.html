@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achadinhos para Mães - Grupo VIP</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            /* Aponta exatamente para a sua imagem imagem.png */
+            background-image: url('./imagem.png');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: #fdf2f8;
+        }
+        
+        /* Animação de pulso no botão */
+        @keyframes pulse-custom {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+        }
+        .btn-pulse {
+            animation: pulse-custom 1.8s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-end sm:justify-center items-center p-4 font-sans text-gray-900 pb-8 sm:pb-4">
+
+    <!-- Card Principal (Semi-transparente para destacar o fundo) -->
+    <main class="w-full max-w-sm bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl p-6 text-center border-2 border-rose-200/60 mt-auto sm:mt-0">
+        
+        <!-- Selo de Acesso Gratuito -->
+        <div class="inline-flex items-center gap-1.5 bg-rose-600 text-white text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 shadow-md">
+            <span>🎁</span> ACESSO 100% GRATUITO
+        </div>
+        
+        <!-- Título -->
+        <h1 class="text-2xl sm:text-3xl font-black text-gray-950 mb-2 leading-tight">
+            GRUPO VIP DE ACHADINHOS
+        </h1>
+        
+        <p class="text-gray-700 text-sm font-medium mb-6">
+            Receba as melhores ofertas, cupons e achados de maternidade direto no seu WhatsApp!
+        </p>
+
+        <!-- Botão Principal de Entrada -->
+        <div class="space-y-3">
+            <a href="https://chat.whatsapp.com/KFvb5TYw4ud2kNySpjBka5?s=cl&p=i&mlu=4&ilr=4&iam=2" target="_blank" 
+               class="btn-pulse block w-full bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-white font-black text-xl py-4 px-4 rounded-2xl shadow-xl transition-all uppercase tracking-wide border-2 border-emerald-300">
+                👉 ENTRAR NO GRUPO AGORA 👈
+            </a>
+
+            <!-- Reforço de Gratuidade -->
+            <div class="bg-emerald-50/90 rounded-xl p-2.5 border border-emerald-200">
+                <p class="text-xs font-extrabold text-emerald-800 uppercase flex items-center justify-center gap-1">
+                    <span>✅</span> NÃO PAGA NADA PARA PARTICIPAR
+                </p>
+                <p class="text-[11px] text-emerald-700 font-medium">
+                    🔒 +55 mil mães economizando • Sem Spam
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="mt-4 text-center text-[11px] text-gray-800 font-bold bg-white/70 px-3 py-1 rounded-full backdrop-blur-sm">
+        © 2026 Achados para Mães
+    </footer>
+
+</body>
+</html>
